@@ -1,0 +1,11 @@
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\Exemplo\Exemplo\bin\Debug\netcoreapp2.0\Exemplo.deps.json
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\Exemplo\Exemplo\bin\Debug\netcoreapp2.0\Exemplo.runtimeconfig.json
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\Exemplo\Exemplo\bin\Debug\netcoreapp2.0\Exemplo.runtimeconfig.dev.json
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\Exemplo\Exemplo\bin\Debug\netcoreapp2.0\Exemplo.dll
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\Exemplo\Exemplo\bin\Debug\netcoreapp2.0\Exemplo.pdb
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\Exemplo\Exemplo\obj\Debug\netcoreapp2.0\Exemplo.csprojResolveAssemblyReference.cache
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\Exemplo\Exemplo\obj\Debug\netcoreapp2.0\Exemplo.csproj.CoreCompileInputs.cache
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\Exemplo\Exemplo\obj\Debug\netcoreapp2.0\Exemplo.AssemblyInfoInputs.cache
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\Exemplo\Exemplo\obj\Debug\netcoreapp2.0\Exemplo.AssemblyInfo.cs
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\Exemplo\Exemplo\obj\Debug\netcoreapp2.0\Exemplo.dll
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\Exemplo\Exemplo\obj\Debug\netcoreapp2.0\Exemplo.pdb

@@ -1,0 +1,10 @@
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\HelloWorld\bin\Debug\netcoreapp2.0\HelloWorld.deps.json
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\HelloWorld\bin\Debug\netcoreapp2.0\HelloWorld.runtimeconfig.json
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\HelloWorld\bin\Debug\netcoreapp2.0\HelloWorld.runtimeconfig.dev.json
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\HelloWorld\bin\Debug\netcoreapp2.0\HelloWorld.dll
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\HelloWorld\bin\Debug\netcoreapp2.0\HelloWorld.pdb
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\HelloWorld\obj\Debug\netcoreapp2.0\HelloWorld.csproj.CoreCompileInputs.cache
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\HelloWorld\obj\Debug\netcoreapp2.0\HelloWorld.AssemblyInfoInputs.cache
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\HelloWorld\obj\Debug\netcoreapp2.0\HelloWorld.AssemblyInfo.cs
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\HelloWorld\obj\Debug\netcoreapp2.0\HelloWorld.dll
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\HelloWorld\obj\Debug\netcoreapp2.0\HelloWorld.pdb

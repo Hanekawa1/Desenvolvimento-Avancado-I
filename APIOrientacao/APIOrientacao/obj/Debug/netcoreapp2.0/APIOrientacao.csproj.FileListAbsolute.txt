@@ -1,0 +1,24 @@
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\APIOrientacao\APIOrientacao\APIOrientacao\bin\Debug\netcoreapp2.0\APIOrientacao.deps.json
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\APIOrientacao\APIOrientacao\APIOrientacao\bin\Debug\netcoreapp2.0\APIOrientacao.runtimeconfig.json
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\APIOrientacao\APIOrientacao\APIOrientacao\bin\Debug\netcoreapp2.0\APIOrientacao.runtimeconfig.dev.json
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\APIOrientacao\APIOrientacao\APIOrientacao\bin\Debug\netcoreapp2.0\APIOrientacao.dll
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\APIOrientacao\APIOrientacao\APIOrientacao\bin\Debug\netcoreapp2.0\APIOrientacao.pdb
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\APIOrientacao\APIOrientacao\APIOrientacao\obj\Debug\netcoreapp2.0\APIOrientacao.csprojResolveAssemblyReference.cache
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\APIOrientacao\APIOrientacao\APIOrientacao\obj\Debug\netcoreapp2.0\APIOrientacao.csproj.CoreCompileInputs.cache
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\APIOrientacao\APIOrientacao\APIOrientacao\obj\Debug\netcoreapp2.0\APIOrientacao.AssemblyInfoInputs.cache
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\APIOrientacao\APIOrientacao\APIOrientacao\obj\Debug\netcoreapp2.0\APIOrientacao.AssemblyInfo.cs
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\APIOrientacao\APIOrientacao\APIOrientacao\obj\Debug\netcoreapp2.0\APIOrientacao.dll
+D:\Desenvolvimento_Wender\Desenvolvimento Avançado I - 6p\APIOrientacao\APIOrientacao\APIOrientacao\obj\Debug\netcoreapp2.0\APIOrientacao.pdb
+E:\Desenvolvimento Avançado I\APIOrientacao\APIOrientacao\APIOrientacao\bin\Debug\netcoreapp2.0\APIOrientacao.deps.json
+E:\Desenvolvimento Avançado I\APIOrientacao\APIOrientacao\APIOrientacao\bin\Debug\netcoreapp2.0\APIOrientacao.runtimeconfig.json
+E:\Desenvolvimento Avançado I\APIOrientacao\APIOrientacao\APIOrientacao\bin\Debug\netcoreapp2.0\APIOrientacao.runtimeconfig.dev.json
+E:\Desenvolvimento Avançado I\APIOrientacao\APIOrientacao\APIOrientacao\bin\Debug\netcoreapp2.0\APIOrientacao.dll
+E:\Desenvolvimento Avançado I\APIOrientacao\APIOrientacao\APIOrientacao\bin\Debug\netcoreapp2.0\APIOrientacao.pdb
+E:\Desenvolvimento Avançado I\APIOrientacao\APIOrientacao\APIOrientacao\obj\Debug\netcoreapp2.0\APIOrientacao.csproj.CoreCompileInputs.cache
+E:\Desenvolvimento Avançado I\APIOrientacao\APIOrientacao\APIOrientacao\obj\Debug\netcoreapp2.0\APIOrientacao.AssemblyInfoInputs.cache
+E:\Desenvolvimento Avançado I\APIOrientacao\APIOrientacao\APIOrientacao\obj\Debug\netcoreapp2.0\APIOrientacao.AssemblyInfo.cs
+E:\Desenvolvimento Avançado I\APIOrientacao\APIOrientacao\APIOrientacao\obj\Debug\netcoreapp2.0\APIOrientacao.dll
+E:\Desenvolvimento Avançado I\APIOrientacao\APIOrientacao\APIOrientacao\obj\Debug\netcoreapp2.0\APIOrientacao.pdb
+E:\Desenvolvimento Avançado I\APIOrientacao\APIOrientacao\APIOrientacao\obj\Debug\netcoreapp2.0\APIOrientacao.csprojResolveAssemblyReference.cache
+E:\Desenvolvimento Avançado I\APIOrientacao\APIOrientacao\APIOrientacao\bin\Debug\netcoreapp2.0\APIOrientacao.Data.dll
+E:\Desenvolvimento Avançado I\APIOrientacao\APIOrientacao\APIOrientacao\bin\Debug\netcoreapp2.0\APIOrientacao.Data.pdb
