@@ -3690,7 +3690,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrador\\.nuget\\packages\\": {},
+    "C:\\Users\\Desenvolvimento\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
@@ -3700,18 +3700,18 @@
       "hideWarningsAndErrors": true
     },
     "restore": {
-      "projectUniqueName": "E:\\Desenvolvimento Avançado I\\APIOrientacao\\APIOrientacao\\APIOrientacao.Data\\APIOrientacao.Data.csproj",
+      "projectUniqueName": "E:\\Desenvolvimento Avançado I\\APIOrientacao\\APIOrientacao.Data\\APIOrientacao.Data.csproj",
       "projectName": "APIOrientacao.Data",
-      "projectPath": "E:\\Desenvolvimento Avançado I\\APIOrientacao\\APIOrientacao\\APIOrientacao.Data\\APIOrientacao.Data.csproj",
-      "packagesPath": "C:\\Users\\Administrador\\.nuget\\packages\\",
-      "outputPath": "E:\\Desenvolvimento Avançado I\\APIOrientacao\\APIOrientacao\\APIOrientacao.Data\\obj\\",
+      "projectPath": "E:\\Desenvolvimento Avançado I\\APIOrientacao\\APIOrientacao.Data\\APIOrientacao.Data.csproj",
+      "packagesPath": "C:\\Users\\Desenvolvimento\\.nuget\\packages\\",
+      "outputPath": "E:\\Desenvolvimento Avançado I\\APIOrientacao\\APIOrientacao.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Administrador\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Desenvolvimento\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
