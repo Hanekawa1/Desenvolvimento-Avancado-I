@@ -10,5 +10,7 @@ namespace APIOrientacao.Data
         public int IdPessoa { get; set; }
         [Required(ErrorMessage = "O nome é obrigatório!")]
         public string Nome { get; set; }
+
+        public Aluno Aluno { get; set; }
     }
 }
