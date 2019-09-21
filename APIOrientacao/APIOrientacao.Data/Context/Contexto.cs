@@ -13,12 +13,14 @@ namespace APIOrientacao.Data.Context
         public DbSet<Aluno> Aluno { get; set; }
         public DbSet<Curso> Curso { get; set; }
         public DbSet<Pessoa> Pessoa { get; set; }
+        public DbSet<Projeto> Projeto { get; set; }
+        public DbSet<Situacao> Situacao { get; set; }
+        public DbSet<SituacaoProjeto> SituacaoProjeto { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ForSqlServerUseIdentityColumns();
             modelBuilder.HasDefaultSchema("dbo");
-
 
             #region Aluno
             modelBuilder.Entity<Aluno>(e => 
@@ -86,6 +88,86 @@ namespace APIOrientacao.Data.Context
                     .HasColumnName("Nome")
                     .IsRequired()
                     .HasMaxLength(300);
+            });
+            #endregion
+
+            #region Situacao
+            modelBuilder.Entity<Situacao>(e =>
+            {
+                e.ToTable("Situacao");
+                e.HasKey(c => c.IdSituacao).HasName("IdSituacao");
+
+                e.Property(c => c.IdSituacao)
+                    .HasColumnName("IdSituacao")
+                    .ValueGeneratedOnAdd();
+
+                e.Property(c => c.Descricao).HasColumnName("Descricao")
+                    .IsRequired()
+                    .HasMaxLength(100);
+            });
+            #endregion
+
+            #region SituacaoProjeto
+            modelBuilder.Entity<SituacaoProjeto>(e => {
+                e.ToTable("SituacaoProjeto");
+                e.HasKey(c => new { c.IdProjeto, c.IdSituacao});
+
+                e.Property(c => c.IdProjeto)
+                    .HasColumnName("IdProjeto")
+                    .IsRequired();
+
+                e.Property(c => c.IdSituacao)
+                    .HasColumnName("IdSituacao")
+                    .IsRequired();
+
+                e.Property(c => c.DataRegistro)
+                    .HasColumnName("DataRegistro")
+                    .HasColumnType("datetime")
+                    .IsRequired();
+
+                e.HasOne(d => d.Situacao)
+                    .WithMany(p => p.SituacoesProjeto)
+                    .HasForeignKey(d => d.IdSituacao)
+                    .HasConstraintName("FK_SituacaoSituacaoProjeto");
+
+                e.HasOne(d => d.Projeto)
+                    .WithMany(p => p.SituacoesProjeto)
+                    .HasForeignKey(d => d.IdProjeto)
+                    .HasConstraintName("FK_ProjetoSituacaoProjeto");
+            });
+            #endregion
+
+            #region Projeto
+            modelBuilder.Entity<Projeto>(e =>
+            {
+                e.ToTable("Projeto");
+                e.HasKey(c => c.IdProjeto).HasName("IdProjeto");
+
+                e.Property(c => c.IdProjeto)
+                    .HasColumnName("IdProjeto")
+                    .ValueGeneratedOnAdd();
+
+                e.Property(c => c.IdPessoa)
+                    .HasColumnName("IdPessoa")
+                    .IsRequired();
+
+                e.Property(c => c.Nota)
+                    .HasColumnName("Nota")
+                    .IsRequired();
+
+                e.Property(c => c.Encerrado)
+                    .HasColumnName("Encerrado")
+                    .IsRequired();
+
+                e.Property(c => c.Nome)
+                    .HasColumnName("Nome")
+                    .IsRequired()
+                    .HasMaxLength(200);
+
+                e.HasOne(d => d.Aluno)
+                    .WithMany(p => p.Projetos)
+                    .HasForeignKey(d => d.IdPessoa)
+                    .HasConstraintName("FK_AlunoProjeto");
             });
             #endregion
         }

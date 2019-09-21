@@ -14,6 +14,8 @@ namespace APIOrientacao.Data
         public Curso Curso { get; set; }
         public Pessoa Pessoa { get; set; }
 
+        public ICollection<Projeto> Projetos { get; set; }
+
         //Diferença entre Collection, List, Enumerable
     }
 }
