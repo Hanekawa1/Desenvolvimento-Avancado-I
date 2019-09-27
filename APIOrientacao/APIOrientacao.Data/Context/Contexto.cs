@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace APIOrientacao.Data.Context
@@ -19,6 +20,12 @@ namespace APIOrientacao.Data.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            //Para cada objeto de relacionamento mapeados no contexto, a propriedade de restrição de "Cascade" é desabilitada
+            foreach(var relacionamento in modelBuilder.Model.GetEntityTypes().SelectMany(e => e.GetForeignKeys()))
+            {
+                relacionamento.DeleteBehavior = DeleteBehavior.Restrict;
+            }
+
             modelBuilder.ForSqlServerUseIdentityColumns();
             modelBuilder.HasDefaultSchema("dbo");
 

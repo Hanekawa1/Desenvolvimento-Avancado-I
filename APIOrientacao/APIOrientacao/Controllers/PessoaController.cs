@@ -7,6 +7,7 @@ using APIOrientacao.Api.Response;
 using APIOrientacao.Data;
 using APIOrientacao.Data.Context;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace APIOrientacao.Controllers
 {
@@ -60,5 +61,59 @@ namespace APIOrientacao.Controllers
             });
         }
 
+        [HttpPut("{idPessoa}")]
+        [ProducesResponseType(typeof(PessoaResponse),200)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(404)]
+        public IActionResult Put(int idPessoa, [FromBody] PessoaRequest pessoaRequest)
+        {
+            try
+            {
+                var pessoa = contexto.Pessoa.Where(x => x.IdPessoa == idPessoa).FirstOrDefault();
+
+                if (pessoa != null)
+                {
+                    pessoa.Nome = pessoaRequest.Nome;
+                    contexto.SaveChanges();
+                }
+
+                contexto.Entry(pessoa).State = EntityState.Modified;               
+            }
+
+            catch (Exception ex)
+            {
+                return StatusCode(400, ex.InnerException.Message.FirstOrDefault());
+            }
+
+            var pessoaRetorno = contexto.Pessoa.FirstOrDefault(x => x.IdPessoa == idPessoa);
+
+            return StatusCode(200, new PessoaResponse() {
+                Idpessoa = pessoaRetorno.IdPessoa,
+                Nome = pessoaRetorno.Nome
+            });
+        }     
+
+        [HttpDelete("{idPessoa}")]
+        [ProducesResponseType(400)]
+        public IActionResult Delete(int idPessoa)
+        {
+            try
+            {
+                var pessoa = contexto.Pessoa.FirstOrDefault(x => x.IdPessoa == idPessoa);
+
+                if (pessoa != null)
+                {
+                    contexto.Pessoa.Remove(pessoa);
+                    contexto.SaveChanges();
+                }
+
+                return StatusCode(200, "Pessoa excluída com sucesso!");
+            }
+
+            catch (Exception ex)
+            {
+                return StatusCode(400, ex.InnerException.Message.FirstOrDefault());
+            }
+        }
     }
 }
