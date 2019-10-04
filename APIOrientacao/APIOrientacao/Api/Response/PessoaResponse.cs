@@ -7,7 +7,7 @@ namespace APIOrientacao.Api.Response
 {
     public class PessoaResponse
     {
-        public int Idpessoa { get; set; }
+        public int IdPessoa { get; set; }
         public string Nome { get; set; }
     }
 }

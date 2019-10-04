@@ -61,6 +61,30 @@ namespace APIOrientacao.Data.Migrations
                     b.ToTable("Curso");
                 });
 
+            modelBuilder.Entity("APIOrientacao.Data.Orientacao", b =>
+                {
+                    b.Property<int>("IdProjeto")
+                        .HasColumnName("IdProjeto");
+
+                    b.Property<int>("IdPessoa")
+                        .HasColumnName("IdPessoa");
+
+                    b.Property<DateTime>("DataRegistro")
+                        .HasColumnName("DataRegistro")
+                        .HasColumnType("datetime");
+
+                    b.Property<int>("IdTipoOrientacao")
+                        .HasColumnName("IdSituacaoProjeto");
+
+                    b.HasKey("IdProjeto", "IdPessoa");
+
+                    b.HasIndex("IdPessoa");
+
+                    b.HasIndex("IdTipoOrientacao");
+
+                    b.ToTable("Orientacao");
+                });
+
             modelBuilder.Entity("APIOrientacao.Data.Pessoa", b =>
                 {
                     b.Property<int>("IdPessoa")
@@ -77,6 +101,20 @@ namespace APIOrientacao.Data.Migrations
                         .HasName("IdPessoa");
 
                     b.ToTable("Pessoa");
+                });
+
+            modelBuilder.Entity("APIOrientacao.Data.Professor", b =>
+                {
+                    b.Property<int>("IdPessoa")
+                        .HasColumnName("IdPessoa");
+
+                    b.Property<bool>("RegistoAtivo")
+                        .HasColumnName("RegistroAtivo");
+
+                    b.HasKey("IdPessoa")
+                        .HasName("IdPessoaProfessor");
+
+                    b.ToTable("Professor");
                 });
 
             modelBuilder.Entity("APIOrientacao.Data.Projeto", b =>
@@ -145,19 +183,67 @@ namespace APIOrientacao.Data.Migrations
                     b.ToTable("SituacaoProjeto");
                 });
 
+            modelBuilder.Entity("APIOrientacao.Data.TipoOrientacao", b =>
+                {
+                    b.Property<int>("IdTipoOrientacao")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnName("IdTipoOrientacao")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Descricao")
+                        .IsRequired()
+                        .HasColumnName("Descricao")
+                        .HasMaxLength(100);
+
+                    b.HasKey("IdTipoOrientacao")
+                        .HasName("IdTipoOrientacao");
+
+                    b.ToTable("TipoOrientacao");
+                });
+
             modelBuilder.Entity("APIOrientacao.Data.Aluno", b =>
                 {
                     b.HasOne("APIOrientacao.Data.Curso", "Curso")
                         .WithMany("Alunos")
                         .HasForeignKey("IdCurso")
                         .HasConstraintName("FK_CursoAluno")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("APIOrientacao.Data.Pessoa", "Pessoa")
                         .WithOne("Aluno")
                         .HasForeignKey("APIOrientacao.Data.Aluno", "IdPessoa")
                         .HasConstraintName("PFK_PessoaAluno")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Restrict);
+                });
+
+            modelBuilder.Entity("APIOrientacao.Data.Orientacao", b =>
+                {
+                    b.HasOne("APIOrientacao.Data.Professor", "Professor")
+                        .WithMany("Orientacoes")
+                        .HasForeignKey("IdPessoa")
+                        .HasConstraintName("FK_ProfessorOrientacao")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.HasOne("APIOrientacao.Data.Projeto", "Projeto")
+                        .WithMany("Orientacoes")
+                        .HasForeignKey("IdProjeto")
+                        .HasConstraintName("FK_ProjetoOrientacao")
+                        .OnDelete(DeleteBehavior.Restrict);
+
+                    b.HasOne("APIOrientacao.Data.TipoOrientacao", "TipoOrientacao")
+                        .WithMany("Orientacoes")
+                        .HasForeignKey("IdTipoOrientacao")
+                        .HasConstraintName("FK_TipoOrientacaoOrientacao")
+                        .OnDelete(DeleteBehavior.Restrict);
+                });
+
+            modelBuilder.Entity("APIOrientacao.Data.Professor", b =>
+                {
+                    b.HasOne("APIOrientacao.Data.Pessoa", "Pessoa")
+                        .WithOne("Professor")
+                        .HasForeignKey("APIOrientacao.Data.Professor", "IdPessoa")
+                        .HasConstraintName("PFK_PessoaProfessor")
+                        .OnDelete(DeleteBehavior.Restrict);
                 });
 
             modelBuilder.Entity("APIOrientacao.Data.Projeto", b =>
@@ -166,7 +252,7 @@ namespace APIOrientacao.Data.Migrations
                         .WithMany("Projetos")
                         .HasForeignKey("IdPessoa")
                         .HasConstraintName("FK_AlunoProjeto")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Restrict);
                 });
 
             modelBuilder.Entity("APIOrientacao.Data.SituacaoProjeto", b =>
@@ -175,13 +261,13 @@ namespace APIOrientacao.Data.Migrations
                         .WithMany("SituacoesProjeto")
                         .HasForeignKey("IdProjeto")
                         .HasConstraintName("FK_ProjetoSituacaoProjeto")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("APIOrientacao.Data.Situacao", "Situacao")
                         .WithMany("SituacoesProjeto")
                         .HasForeignKey("IdSituacao")
                         .HasConstraintName("FK_SituacaoSituacaoProjeto")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Restrict);
                 });
 #pragma warning restore 612, 618
         }

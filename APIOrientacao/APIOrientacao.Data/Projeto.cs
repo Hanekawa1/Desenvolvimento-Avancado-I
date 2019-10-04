@@ -14,5 +14,6 @@ namespace APIOrientacao.Data
 
         public Aluno Aluno { get; set; }
         public ICollection<SituacaoProjeto> SituacoesProjeto { get; set; }
+        public ICollection<Orientacao> Orientacoes { get; set; }
     }
 }

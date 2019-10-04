@@ -40,7 +40,7 @@ namespace APIOrientacao.Controllers
 
             if (pessoaRetorno != null)
             {
-                response.Idpessoa = pessoaRetorno.IdPessoa;
+                response.IdPessoa = pessoaRetorno.IdPessoa;
                 response.Nome = pessoaRetorno.Nome;
             }
 
@@ -54,9 +54,8 @@ namespace APIOrientacao.Controllers
         {
             var pessoa = contexto.Pessoa.FirstOrDefault(x => x.IdPessoa == idPessoa);
 
-            return StatusCode(pessoa == null ? 404 : 200, new PessoaResponse
-            {
-                Idpessoa = pessoa == null ? -1 : pessoa.IdPessoa,
+            return StatusCode(pessoa == null ? 404 : 200, new PessoaResponse {
+                IdPessoa = pessoa == null ? -1 : pessoa.IdPessoa,
                 Nome = pessoa == null ? "Pessoa não encontrada" : pessoa.Nome
             });
         }
@@ -88,7 +87,7 @@ namespace APIOrientacao.Controllers
             var pessoaRetorno = contexto.Pessoa.FirstOrDefault(x => x.IdPessoa == idPessoa);
 
             return StatusCode(200, new PessoaResponse() {
-                Idpessoa = pessoaRetorno.IdPessoa,
+                IdPessoa = pessoaRetorno.IdPessoa,
                 Nome = pessoaRetorno.Nome
             });
         }     
