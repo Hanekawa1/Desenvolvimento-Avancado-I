@@ -137,6 +137,8 @@ namespace APIOrientacao.Controllers
             }
         }
 
+        //Rotas não funcionais
+        /*
         [HttpGet("{Nome}")]
         [ProducesResponseType(typeof(List<ProjetoResponse>), 200)]
         [ProducesResponseType(400)]
@@ -178,5 +180,6 @@ namespace APIOrientacao.Controllers
                 NomeAluno = projetos == null ? "Não há aluno vinculado" : x.Aluno.Pessoa.Nome
             }));
         }
+        */
     }
 }

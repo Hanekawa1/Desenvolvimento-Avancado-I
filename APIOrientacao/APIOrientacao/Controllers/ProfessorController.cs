@@ -119,7 +119,8 @@ namespace APIOrientacao.Controllers
                 return StatusCode(400, ex.InnerException.Message.FirstOrDefault());
             }
         }
-
+        //Rotas não funcionais
+        /*
         [HttpGet("{nome}")]
         [ProducesResponseType(typeof(List<ProfessorResponse>), 200)]
         [ProducesResponseType(400)]
@@ -153,5 +154,6 @@ namespace APIOrientacao.Controllers
                 Nome = professores == null ? "Professor não encontrado" : x.Pessoa.Nome
             }));
         }
+        */
     }
 }

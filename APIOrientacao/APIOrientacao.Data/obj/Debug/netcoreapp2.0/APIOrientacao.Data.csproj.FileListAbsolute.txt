@@ -63,3 +63,18 @@ D:\Desenvolvimento Avançado I\projeto em andamento\APIOrientacao\APIOrientacao.
 D:\Desenvolvimento Avançado I\projeto em andamento\APIOrientacao\APIOrientacao.Data\obj\Debug\netcoreapp2.0\APIOrientacao.Data.dll
 D:\Desenvolvimento Avançado I\projeto em andamento\APIOrientacao\APIOrientacao.Data\obj\Debug\netcoreapp2.0\APIOrientacao.Data.pdb
 D:\Desenvolvimento Avançado I\projeto em andamento\APIOrientacao\APIOrientacao.Data\obj\Debug\netcoreapp2.0\APIOrientacao.Data.csprojAssemblyReference.cache
+E:\Desenvolvimento Avançado I\projeto em andamento\APIOrientacao\APIOrientacao.Data\obj\Debug\netcoreapp2.0\APIOrientacao.Data.csprojResolveAssemblyReference.cache
+E:\Desenvolvimento Avançado I\projeto em andamento\APIOrientacao\APIOrientacao.Data\obj\Debug\netcoreapp2.0\APIOrientacao.Data.csproj.CoreCompileInputs.cache
+E:\Desenvolvimento Avançado I\projeto em andamento\APIOrientacao\APIOrientacao.Data\obj\Debug\netcoreapp2.0\APIOrientacao.Data.AssemblyInfoInputs.cache
+E:\Desenvolvimento Avançado I\projeto em andamento\APIOrientacao\APIOrientacao.Data\obj\Debug\netcoreapp2.0\APIOrientacao.Data.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\APIOrientacao\APIOrientacao.Data\bin\Debug\netcoreapp2.0\APIOrientacao.Data.deps.json
+C:\Users\Usuario\Desktop\APIOrientacao\APIOrientacao.Data\bin\Debug\netcoreapp2.0\APIOrientacao.Data.runtimeconfig.json
+C:\Users\Usuario\Desktop\APIOrientacao\APIOrientacao.Data\bin\Debug\netcoreapp2.0\APIOrientacao.Data.runtimeconfig.dev.json
+C:\Users\Usuario\Desktop\APIOrientacao\APIOrientacao.Data\bin\Debug\netcoreapp2.0\APIOrientacao.Data.dll
+C:\Users\Usuario\Desktop\APIOrientacao\APIOrientacao.Data\bin\Debug\netcoreapp2.0\APIOrientacao.Data.pdb
+C:\Users\Usuario\Desktop\APIOrientacao\APIOrientacao.Data\obj\Debug\netcoreapp2.0\APIOrientacao.Data.csprojAssemblyReference.cache
+C:\Users\Usuario\Desktop\APIOrientacao\APIOrientacao.Data\obj\Debug\netcoreapp2.0\APIOrientacao.Data.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\APIOrientacao\APIOrientacao.Data\obj\Debug\netcoreapp2.0\APIOrientacao.Data.AssemblyInfoInputs.cache
+C:\Users\Usuario\Desktop\APIOrientacao\APIOrientacao.Data\obj\Debug\netcoreapp2.0\APIOrientacao.Data.AssemblyInfo.cs
+C:\Users\Usuario\Desktop\APIOrientacao\APIOrientacao.Data\obj\Debug\netcoreapp2.0\APIOrientacao.Data.dll
+C:\Users\Usuario\Desktop\APIOrientacao\APIOrientacao.Data\obj\Debug\netcoreapp2.0\APIOrientacao.Data.pdb

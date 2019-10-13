@@ -74,7 +74,7 @@ namespace APIOrientacao.Data.Migrations
                         .HasColumnType("datetime");
 
                     b.Property<int>("IdTipoOrientacao")
-                        .HasColumnName("IdSituacaoProjeto");
+                        .HasColumnName("IdTipoOrientacao");
 
                     b.HasKey("IdProjeto", "IdPessoa");
 

@@ -3770,11 +3770,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "I:\\Desenvolvimento Avançado I\\projeto em andamento\\APIOrientacao\\APIOrientacao.Data\\APIOrientacao.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\APIOrientacao\\APIOrientacao.Data\\APIOrientacao.Data.csproj",
       "projectName": "APIOrientacao.Data",
-      "projectPath": "I:\\Desenvolvimento Avançado I\\projeto em andamento\\APIOrientacao\\APIOrientacao.Data\\APIOrientacao.Data.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\APIOrientacao\\APIOrientacao.Data\\APIOrientacao.Data.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "I:\\Desenvolvimento Avançado I\\projeto em andamento\\APIOrientacao\\APIOrientacao.Data\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\APIOrientacao\\APIOrientacao.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

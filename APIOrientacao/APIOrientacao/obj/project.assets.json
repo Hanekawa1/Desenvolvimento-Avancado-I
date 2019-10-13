@@ -13419,11 +13419,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "I:\\Desenvolvimento Avançado I\\projeto em andamento\\APIOrientacao\\APIOrientacao\\APIOrientacao.csproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\APIOrientacao\\APIOrientacao\\APIOrientacao.csproj",
       "projectName": "APIOrientacao",
-      "projectPath": "I:\\Desenvolvimento Avançado I\\projeto em andamento\\APIOrientacao\\APIOrientacao\\APIOrientacao.csproj",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\APIOrientacao\\APIOrientacao\\APIOrientacao.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "I:\\Desenvolvimento Avançado I\\projeto em andamento\\APIOrientacao\\APIOrientacao\\obj\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\APIOrientacao\\APIOrientacao\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -13442,8 +13442,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "I:\\Desenvolvimento Avançado I\\projeto em andamento\\APIOrientacao\\APIOrientacao.Data\\APIOrientacao.Data.csproj": {
-              "projectPath": "I:\\Desenvolvimento Avançado I\\projeto em andamento\\APIOrientacao\\APIOrientacao.Data\\APIOrientacao.Data.csproj"
+            "C:\\Users\\Usuario\\Desktop\\APIOrientacao\\APIOrientacao.Data\\APIOrientacao.Data.csproj": {
+              "projectPath": "C:\\Users\\Usuario\\Desktop\\APIOrientacao\\APIOrientacao.Data\\APIOrientacao.Data.csproj"
             }
           }
         }

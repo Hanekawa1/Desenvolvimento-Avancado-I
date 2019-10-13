@@ -133,6 +133,51 @@ namespace APIOrientacao.Controllers
             }
         }
 
+        [HttpGet]
+        [ProducesResponseType(typeof(List<AlunoResponse>), 200)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(404)]
+        public IActionResult Get()
+        {
+            var alunos = contexto.Aluno
+                .Include(i => i.Pessoa).Include(i => i.Curso).ToList();
+
+            return StatusCode(alunos == null ? 404 : 200, alunos.Select(x => new AlunoResponse
+            {
+                IdPessoa = alunos == null ? -1 : x.IdPessoa,
+                RegistroAtivo = alunos == null ? false : true,
+                Matricula = alunos == null ? "Matrícula não encontrada" : x.Matricula,
+                IdCurso = alunos == null ? -1 : x.IdCurso,
+                Nome = alunos == null ? "Aluno não encontrado" : x.Pessoa.Nome,
+                NomeCurso = alunos == null ? "Curso não encontrado" : x.Curso.Nome
+            }));
+        }
+
+        //Rotas não funcionais
+        /*
+               
+        [HttpGet("{nome}")]
+        [ProducesResponseType(typeof(AlunoResponse), 200)]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(404)]
+        public IActionResult Get(string nome)
+        {
+            var aluno = contexto.Aluno.Where(x => x.Pessoa.Nome.Contains(nome))
+               .Include(i => i.Pessoa)
+               .Include(i => i.Curso)
+               .FirstOrDefault();
+
+            return StatusCode(aluno == null ? 404 : 200, new AlunoResponse
+            {
+                IdPessoa = aluno == null ? -1 : aluno.IdPessoa,
+                RegistroAtivo = aluno == null ? false : true,
+                Matricula = aluno == null ? "Matrícula não encontrada" : aluno.Matricula,
+                IdCurso = aluno == null ? -1 : aluno.IdCurso,
+                Nome = aluno == null ? "Aluno não encontrado" : aluno.Pessoa.Nome,
+                NomeCurso = aluno == null ? "Curso não encontrado" : aluno.Curso.Nome
+            });
+        }         
+         
         [HttpDelete("{matricula}")]
         [ProducesResponseType(400)]
         public IActionResult DeleteByMatricula(string matricula)
@@ -154,15 +199,15 @@ namespace APIOrientacao.Controllers
                 return StatusCode(400, ex.InnerException.Message.FirstOrDefault());
             }
         }
-
+        
         [HttpGet("{matricula}")]
         [ProducesResponseType(typeof(AlunoResponse), 200)]
         [ProducesResponseType(400)]
         [ProducesResponseType(404)]
-        public IActionResult GetByMatricula(string matricula)
+        public IActionResult Get(string matricula)
         {
             var aluno = contexto.Aluno.Where(x => x.Matricula == matricula)
-                .Include(i => i.Pessoa).FirstOrDefault();
+                .Include(i => i.Pessoa).Include(i => i.Curso).FirstOrDefault();
 
             return StatusCode(aluno == null ? 404 : 200, new AlunoResponse
             {
@@ -174,13 +219,13 @@ namespace APIOrientacao.Controllers
                 NomeCurso = aluno == null ? "Curso não encontrado" : aluno.Curso.Nome
             });
         }
-
+        
         [HttpGet("{registroAtivo}")]
         [ProducesResponseType(typeof(List<AlunoResponse>), 200)]
         [ProducesResponseType(400)]
-        public IActionResult GetByRegistroAtivo(int registroAtivo)
+        public IActionResult Get(bool registroAtivo)
         {
-            var ativo = registroAtivo == 1 ? true : false;
+            var ativo = registroAtivo;
 
             var alunos = contexto.Aluno.Where(x => x.RegistroAtivo == ativo)
                 .Include(i => i.Pessoa).ToList();
@@ -195,7 +240,7 @@ namespace APIOrientacao.Controllers
                 NomeCurso = alunos == null ? "Curso não encontrado" : x.Curso.Nome
             }));
         }
-
+        
         [HttpGet("{nomeCurso}")]
         [ProducesResponseType(typeof(List<AlunoResponse>), 200)]
         [ProducesResponseType(400)]
@@ -215,5 +260,7 @@ namespace APIOrientacao.Controllers
                 NomeCurso = alunos == null ? "Curso não encontrado" : x.Curso.Nome
             }));
         }
+
+        */
     }
 }
